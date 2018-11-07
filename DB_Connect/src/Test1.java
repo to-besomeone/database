@@ -1,4 +1,3 @@
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -28,7 +27,7 @@ public class Test1 {
     }
 
     public void execute_query() throws SQLException{
-        String sqlStr = "SELECT maker, type FROM product" + "Where model=2004";
+        String sqlStr = "SELECT maker, type FROM product" + " Where model=2004";
         PreparedStatement stmt = dbTest.prepareStatement(sqlStr);
         ResultSet rs = stmt.executeQuery();
 
@@ -41,6 +40,7 @@ public class Test1 {
     }
 
     public static void main(String[] args){
+
         Test1 t1 = new Test1();
         try{
             t1.execute_query();
