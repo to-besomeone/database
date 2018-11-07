@@ -34,7 +34,6 @@ public class Test1 {
         while(rs.next()){
 
             System.out.println("avg(speed): " + rs.getFloat("avg(SPEED)"));
-            //System.out.println("type: "+rs.getString("TYPE"));
         }
         rs.close();
         stmt.close();
@@ -48,7 +47,6 @@ public class Test1 {
         while(rs.next()){
 
             System.out.println("price: " + rs.getInt("price"));
-            //System.out.println("type: "+rs.getString("TYPE"));
         }
         rs.close();
         stmt.close();
@@ -65,7 +63,6 @@ public class Test1 {
             System.out.print("model : " + rs.getInt("model") + " | ");
             System.out.print("speed : " + rs.getInt("speed") + " | ");
             System.out.println("hd : " + rs.getFloat("hd"));
-            //System.out.println("type: "+rs.getString("TYPE"));
         }
         rs.close();
         stmt.close();
